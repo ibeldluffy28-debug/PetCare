@@ -369,3 +369,107 @@ body {
     flex-direction: column;
   }
 }
+
+/* Responsif untuk layar kecil */
+@media (max-width: 768px) {
+  /* HERO */
+  .hero {
+    padding: 60px 1rem;
+    text-align: center;
+  }
+
+  .hero .col-md-6 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .hero-img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 14px;
+  }
+
+  .hero-buttons .btn {
+    width: 100%;
+    margin: 0.5rem 0;
+  }
+
+  /* FEATURES */
+  .features-wrapper {
+    padding: 50px 1rem;
+  }
+
+  .features-title {
+    font-size: 1.75rem;
+  }
+
+  .features-subtitle {
+    font-size: 14px;
+  }
+
+  .feature-card {
+    padding: 20px;
+  }
+
+  .feature-card h5 {
+    font-size: 16px;
+  }
+
+  .feature-card p {
+    font-size: 13px;
+  }
+
+  /* SERVICE */
+  .service-wrapper {
+    padding: 50px 1rem;
+  }
+
+  .service-card {
+    padding: 15px;
+  }
+
+  .service-card h5 {
+    font-size: 16px;
+  }
+
+  .service-card p {
+    font-size: 13px;
+  }
+
+  /* PETCARE JOIN */
+  .petcare {
+    padding: 2rem 1rem;
+  }
+
+  .pet-title {
+    font-size: 1.75rem;
+  }
+
+  .pet-text {
+    font-size: 14px;
+  }
+
+  .pet-buttons .btn {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  /* FOOTER */
+  .petcare-footer .footer-top {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .petcare-footer .footer-links a {
+    display: block;
+    margin: 0.5rem 0;
+  }
+}
