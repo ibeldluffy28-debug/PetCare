@@ -13,7 +13,7 @@
   </head>
   <body>
     <!-- NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-custom">
+    <nav class="navbar navbar-expand-lg navbar-custom fixed-top">
       <div class="container">
         <a class="navbar-brand d-flex align-items-center" href="#">
           <div class="logo-icon me-2">🐾</div>
@@ -33,6 +33,7 @@
         </div>
       </div>
     </nav>
+    <!-- Akhir Navbar -->
 
     <!-- HERO -->
     <div class="hero">
@@ -111,7 +112,6 @@
     </div>
     <!-- Featueres -->
 
-    <!-- SERVICE SECTION -->
     <section id="Service" class="service-wrapper">
       <div class="container">
         <div class="text-center mb-4">
@@ -134,7 +134,7 @@
 
           <div class="col-md-4 mb-4">
             <div class="card service-card">
-              <img src="static/kitten-8061043_1280.png" class="card-img-top" />
+              <img src="static/grooming.jpg" class="card-img-top" />
               <div class="card-body text-center">
                 <h5 class="card-title">Professional Grooming</h5>
                 <p class="card-text">Book trusted groomers for your furry friends</p>
@@ -145,7 +145,7 @@
 
           <div class="col-md-4 mb-4">
             <div class="card service-card">
-              <img src="static/kitten-8061043_1280.png" class="card-img-top" />
+              <img src="static/the-benefits-of-premium-pet-food-get-set-pet.webp" class="card-img-top" />
               <div class="card-body text-center">
                 <h5 class="card-title">Premium Products</h5>
                 <p class="card-text">Shop high-quality food, toys, and accessories</p>
@@ -157,7 +157,78 @@
       </div>
     </section>
 
-    <!-- PETCARE JOIN SECTION -->
+    <!-- Penilaian -->
+    <section class="testimonials py-5">
+      <div class="container text-center">
+        <!-- Badge -->
+        <span class="badge-feature mb-3 d-inline-block">Testimonials</span>
+
+        <!-- Title -->
+        <h2 class="fw-bold mb-2">Loved by Pet Parents Everywhere</h2>
+        <p class="text-muted mb-5">Join thousands of happy pet owners who trust PetCare</p>
+
+        <div class="row g-4">
+          <!-- Card 1 -->
+          <div class="col-md-4">
+            <div class="card testi-card h-100">
+              <div class="card-body text-start p-4">
+                <div class="text-warning mb-2">★★★★★</div>
+
+                <p class="text-muted small">"PetCare has made managing my dog's appointments so much easier! The reminders are a lifesaver."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <img src="static/dd714720a1ebdd2919ecbb99e6179f75.jpg" class="avatar me-3" />
+                  <div>
+                    <h6 class="mb-0">Jessica Martinez</h6>
+                    <small class="text-muted">Dog Owner</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="col-md-4">
+            <div class="card testi-card h-100">
+              <div class="card-body text-start p-4">
+                <div class="text-warning mb-2">★★★★★</div>
+
+                <p class="text-muted small">"Love the shopping feature! I can order all of Luna's favorite treats and they arrive next day."</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <img src="static/dd714720a1ebdd2919ecbb99e6179f75.jpg" class="avatar me-3" />
+                  <div>
+                    <h6 class="mb-0">Michael Chen</h6>
+                    <small class="text-muted">Cat Owner</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="col-md-4">
+            <div class="card testi-card h-100">
+              <div class="card-body text-start p-4">
+                <div class="text-warning mb-2">★★★★★</div>
+
+                <p class="text-muted small">"Managing three pets was overwhelming until I found PetCare. It's a game changer!"</p>
+
+                <div class="d-flex align-items-center mt-4">
+                  <img src="static/dd714720a1ebdd2919ecbb99e6179f75.jpg" class="avatar me-3" />
+                  <div>
+                    <h6 class="mb-0">Sarah Johnson</h6>
+                    <small class="text-muted">Dog Owner</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Petcare join Member -->
     <div class="petcare">
       <h1 class="pet-title">Ready to Give Your Pet the Best Care?</h1>
       <p class="pet-text">Join PetCare today and experience stress-free pet parenting</p>
@@ -167,28 +238,53 @@
       </div>
     </div>
 
-    <!-- FOOTER -->
-    <footer class="petcare-footer">
+    <!-- Footer -->
+    <footer class="footer-dark py-5">
       <div class="container">
-        <div class="footer-top">
-          <div class="footer-logo"><h3>PetCare</h3></div>
-          <div class="footer-links">
-            <a href="#Service">Services</a>
-            <a href="#Testimonials">Testimonials</a>
-          </div>
-          <div class="footer-contact">
-            <p>Email: support@petcare.com</p>
-            <p>Phone: +62 812-3456-7890</p>
-            <div class="socials">
-              <a href="#"><img src="static/facebook.png" alt="Facebook" /></a>
-              <a href="#"><img src="static/instagram.png" alt="Instagram" /></a>
-              <a href="#"><img src="static/twitter.png" alt="Twitter" /></a>
+        <div class="row">
+          <!-- Brand -->
+          <div class="col-md-3 mb-4">
+            <div class="d-flex align-items-center mb-2">
+              <div class="logo-circle me-2">🐾</div>
+              <h5 class="mb-0">PetCare</h5>
             </div>
+            <p class="footer-desc">Your trusted partner in pet care and wellness.</p>
+          </div>
+
+          <!-- Product -->
+          <div class="col-md-3 mb-4">
+            <h6 class="footer-title">Product</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Features</a></li>
+              <li><a href="#">Pricing</a></li>
+              <li><a href="#">Services</a></li>
+            </ul>
+          </div>
+
+          <!-- Company -->
+          <div class="col-md-3 mb-4">
+            <h6 class="footer-title">Company</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Careers</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+
+          <!-- Legal -->
+          <div class="col-md-3 mb-4">
+            <h6 class="footer-title">Legal</h6>
+            <ul class="list-unstyled">
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">Terms of Service</a></li>
+              <li><a href="#">Cookie Policy</a></li>
+            </ul>
           </div>
         </div>
-        <div class="footer-bottom">
-          <p>© 2026 PetCare. All rights reserved.</p>
-        </div>
+
+        <hr class="footer-line" />
+
+        <div class="text-center footer-bottom">© 2026 PetCare. All rights reserved. Made with ❤️ for pets everywhere.</div>
       </div>
     </footer>
 
