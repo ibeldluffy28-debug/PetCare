@@ -8,12 +8,17 @@ body {
 }
 
 /*NAVBAR*/
+.logo-icon {
+  color: #c08552;
+  font-size: 24px;
+}
+
 .navbar-custom {
   background: #ffffff;
 }
 
 .navbar .nav-link {
-  color: #4a3b36;
+  color: #8c5a3c;
   font-weight: 500;
   transition: color 0.2s;
 }
