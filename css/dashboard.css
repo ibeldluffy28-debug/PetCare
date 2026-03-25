@@ -36,9 +36,16 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0;
-  background-color: #fdfaf5;
+
+  /* FULL WIDTH TRICK */
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+
+  padding: 15px 40px;
+
+  background-color: #ffffff;
   border-bottom: 1px solid #f0e8e0;
+
   position: sticky;
   top: 0;
   z-index: 100;
@@ -52,46 +59,61 @@ a {
   font-weight: 700;
 }
 
+logo-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
 .logo-icon {
-  color: #c09f80;
+  color: #ba8558;
+  font-size: 1.6rem;
+}
+
+.logo-text {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #3e2f22;
 }
 
 .main-nav {
   display: flex;
-  gap: 30px;
-  font-weight: 500;
-  color: #7b6f63;
+  gap: 40px;
 }
 
 .main-nav a {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 10px;
   padding: 10px 0;
-  border-bottom: 2px solid transparent;
+  color: #7b6f63;
+  font-weight: 500;
+  font-size: 0.95rem;
+  border-bottom: 3px solid transparent;
 }
 
 .main-nav a.active {
-  color: #4a3f35;
-  border-bottom: 2px solid #a3ccca;
+  color: #3e2f22;
+  border-bottom: 3px solid #82b1b4;
 }
 
-.main-nav a:not(.active) i {
-  color: #a3ccca;
+.main-nav a i {
+  color: #a3b9bb;
+  font-size: 1.1rem;
 }
 
 .main-nav a.active i {
-  color: #a3ccca;
+  color: #82b1b4;
 }
 
 .top-right-actions {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 25px;
 }
 
 .action-icon {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   color: #7b6f63;
   cursor: pointer;
 }
@@ -102,25 +124,34 @@ a {
 
 .notification-dot {
   position: absolute;
-  top: -3px;
-  right: -3px;
-  width: 8px;
-  height: 8px;
-  background-color: #a3ccca;
+  top: -4px;
+  right: -4px;
+  width: 9px;
+  height: 9px;
+  background-color: #82b1b4;
   border-radius: 50%;
-  border: 2px solid #fdfaf5;
+  border: 2px solid #fffbf7;
 }
 
 .profile-avatar {
-  width: 40px;
-  height: 40px;
-  background-color: #c0bca8;
+  width: 42px;
+  height: 42px;
+  background-image: linear-gradient(135deg, #82b1b4 0%, #ba8558 100%);
   color: white;
   border-radius: 50%;
   display: flex;
   justify-content: center;
   align-items: center;
+  font-size: 0.9rem;
   font-weight: 700;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(62, 47, 34, 0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
 }
 
 /* --- MAIN CONTENT AREA --- */
