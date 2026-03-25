@@ -25,9 +25,16 @@ background-color: #8C5A3C;
 }
 .background-light-brown{
     background-color: #FFF8F0;
+  
+}
+
+
+.background-brown-with-hover{
+        background-color: #FFF8F0;
     color: #4B2E2B;
 }
-.background-light-brown:hover{
+
+.background-brown-with-hover:hover{
     background-color: #8C5A3C;
     color: #F9F5ED;
 }
