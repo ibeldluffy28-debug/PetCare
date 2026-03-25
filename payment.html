@@ -98,24 +98,24 @@
  <!----> <div class="p-3 mt-3">
     <i class="fa-solid fa-angle-left me-2"> </i>
     <small class="text-muted " style="font-size: small;"><strong>ACCOUNT</strong></small>
-    <ul class="nav flex-column mt-2 text-dark-brown" style="font-size: 14px;">
-      <li class="nav-item d-flex align-items-center ">
+    <ul class="nav flex-column mt-2 text-dark-brown " style="font-size: 14px;">
+      <li class="nav-item d-flex align-items-center item-transition">
         <i class="bi bi-box-seam ms-2"></i>
           <a class="nav-link sidebar-text-color" aria-current="page" href="orders.html" >My Orders</a>
         </li>
-        <li class="nav-item d-flex align-items-center">
+        <li class="nav-item d-flex align-items-center item-transition ">
           <i class="bi bi-heart ms-2"></i>
           <a class="nav-link sidebar-text-color" href="#">Favorites</a>
         </li>
-        <li class="nav-item d-flex align-items-center menu-active ">
+        <li class="nav-item d-flex align-items-center item-transition ">
           <i class="bi bi-geo-alt ms-2"></i>
           <a class="nav-link sidebar-text-color " href="#">Addresses</a>
         </li>
-        <li class="nav-item d-flex align-items-center">
+        <li class="nav-item d-flex align-items-center item-focused menu-active">
           <i class="bi bi-credit-card ms-2"></i>
           <a class="nav-link sidebar-text-color" href="#" tabindex="-1" aria-disabled="true">Payment Methods</a>
         </li>
-        <li class="nav-item d-flex align-items-center">
+        <li class="nav-item d-flex align-items-center item-transition">
           <i class="bi bi-gear ms-2"></i>
           <a class="nav-link sidebar-text-color" href="#">Settings</a>
         </li>
@@ -126,11 +126,11 @@
         <small class ="text-muted" style="font-size: small;"><strong>SUPPORT</strong></small>
 
         <ul class ="nav flex-column mt-2 text-dark-brown">
-          <li class = "nav-item d-flex align-items-center">
+          <li class = "nav-item d-flex align-items-center item-transition">
             <i class="bi bi-question-circle"></i>
             <a class ="nav-link sidebar-text-color" style="font-size: 14px;" href="#">Help Center</a>
           </li>
-          <li class="nav-item d-flex align-items-center">
+          <li class="nav-item d-flex align-items-center item-transition">
             <i class="bi bi-bell"></i>
             <a class ="nav-link sidebar-text-color" style = "font-size: 14px;"href="">Notifications</a>
           </li>
@@ -144,7 +144,269 @@
 
 <!-- MAIN CONTENT -->
 <main class = "main-content flex-grow-1 px-3">
- 
+  <div class="container">
+    <div class="d-flex align-items-start justify-content-between">
+      <div>
+        <h2 style="color: #4B2E2B;">Payment Methods</h2>
+          <p style="color: #8C5A3C;font-size: 14px;">Manage your saved payment cards</p>
+      </div>
+      
+        <div class="btn background-green text-white rounded-pill px-3 ms-3 a"> 
+          <i class="bi bi-plus-lg me-2"></i>Add Card
+        </div>
+    </div>
+
+
+        <div class="pb-4 ">
+    <div class="card background-brown-with-green-border py-3 px-3" style="border-radius: 10px;">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="card-visa squircle d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between">
+                <div class="squircle-card "></div>
+                <div class="text-white visa-font" ><strong>Visa</strong></div>
+              </div>
+              <div class="ml-25 mb-3">
+                <span class="card-bullet text-white">●●●● ●●●● ●●●● </span>
+                <span class="card-number text-white"><strong>4242</strong></span>
+              </div>
+              <div class="ml-25 justify-content-between d-flex mb-25 mr-2">
+                <div>
+                  <span style="opacity: 0.8; color: white; font-size: small;">Card Holder</span>
+                  <div class="text-white fs-6"><strong>Keqing</strong></div>
+                </div>
+                <div>
+                  <span style="opacity: 0.8; color: white; font-size: small;">Expires</span>
+                  <div class="text-white fs-6" style="opacity: 0.9;"><strong>12/31</strong></div>
+                </div>
+              </div>
+            </div>
+             
+          </div>
+          <div class="col-sm-7 d-flex flex-column justify-content-between">
+            <div>
+              <ul class="list-unstyled text-brown mb-4  " style="font-size: small;">
+                <li class="text-dark-brown mb-2  fs-6"> <strong>Visa •••• 4262</strong> 
+                <small class="text-white background-green rounded-pill px-2 py-1 " style="font-size: 11px;">Default</small>
+                </li>
+                <li class="mb-2" style="font-size: 13px;">Expires on 12/31</li>
+                <li class="mb-2" style="font-size: 13px;">Keqing</li>
+                
+            </ul>
+            </div>
+              <div class="btn w-100 rounded-pill border-brown background-light-brown"> 
+               <i class="bi bi-pencil-square"></i>
+                 <span class="">edit</span>
+             </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  
+
+        <div class="pb-4 ">
+    <div class="card border-brown py-3 px-3" style="border-radius: 10px;">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="card-mastercard squircle d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between">
+                <div class="squircle-card "></div>
+                <div class="text-white visa-font" ><strong>Mastercard</strong></div>
+              </div>
+              <div class="ml-25 mb-3">
+                <span class="card-bullet text-white">●●●● ●●●● ●●●● </span>
+                <span class="card-number text-white"><strong>6767</strong></span>
+              </div>
+              <div class="ml-25 justify-content-between d-flex mb-25 mr-2">
+                <div>
+                  <span style="opacity: 0.8; color: white; font-size: small;">Card Holder</span>
+                  <div class="text-white fs-6"><strong>Keqing</strong></div>
+                </div>
+                <div>
+                  <span style="opacity: 0.8; color: white; font-size: small;">Expires</span>
+                  <div class="text-white fs-6" style="opacity: 0.9;"><strong>12/31</strong></div>
+                </div>
+              </div>
+            </div>
+             
+          </div>
+          <div class="col-sm-7 d-flex flex-column justify-content-between">
+            <div>
+              <ul class="list-unstyled text-brown mb-4  " style="font-size: small;">
+                <li class="text-dark-brown mb-2  fs-6"> <strong>Mastercard •••• 6767</strong> 
+                
+                </li>
+                <li class="mb-2" style="font-size: 13px;">Expires on 12/31</li>
+                <li class="mb-2" style="font-size: 13px;">Keqing</li>
+                
+            </ul>
+            </div>
+               <div class="row ">
+    <div class="col">
+  <div class="btn w-100 rounded-pill border-brown background-light-brown"> 
+    <i class="bi bi-pencil-square "></i>
+    <span class="">edit</span>
+    </div>
+  </div>
+      <div class="col">
+  <div class="btn w-100 rounded-pill button-green font-green "> 
+    <i class="bi bi-star"></i>
+    Set default
+    </div>
+  </div>
+  <div class="col-sm-1">
+    <div class="btn background-red" style="border-radius: 1rem;">
+      <i class="bi bi-trash3 "></i>
+    </div>
+    
+  </div>
+  </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+          <div class="pb-4 ">
+    <div class="card border-brown py-3 px-3" style="border-radius: 10px;">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="card-mastercard squircle d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between">
+                <div class="squircle-card "></div>
+                <div class="text-white visa-font" ><strong>Mastercard</strong></div>
+              </div>
+              <div class="ml-25 mb-3">
+                <span class="card-bullet text-white">●●●● ●●●● ●●●● </span>
+                <span class="card-number text-white"><strong>4646</strong></span>
+              </div>
+              <div class="ml-25 justify-content-between d-flex mb-25 mr-2">
+                <div>
+                  <span style="opacity: 0.8; color: white; font-size: small;">Card Holder</span>
+                  <div class="text-white fs-6"><strong>Keqing</strong></div>
+                </div>
+                <div>
+                  <span style="opacity: 0.8; color: white; font-size: small;">Expires</span>
+                  <div class="text-white fs-6" style="opacity: 0.9;"><strong>12/31</strong></div>
+                </div>
+              </div>
+            </div>
+             
+          </div>
+          <div class="col-sm-7 d-flex flex-column justify-content-between">
+            <div>
+              <ul class="list-unstyled text-brown mb-4  " style="font-size: small;">
+                <li class="text-dark-brown mb-2  fs-6"> <strong>Mastercard •••• 4646</strong> 
+                
+                </li>
+                <li class="mb-2" style="font-size: 13px;">Expires on 12/31</li>
+                <li class="mb-2" style="font-size: 13px;">Keqing</li>
+                
+            </ul>
+            </div>
+               <div class="row ">
+    <div class="col">
+  <div class="btn w-100 rounded-pill border-brown background-light-brown"> 
+    <i class="bi bi-pencil-square "></i>
+    <span class="">edit</span>
+    </div>
+  </div>
+      <div class="col">
+  <div class="btn w-100 rounded-pill button-green font-green "> 
+    <i class="bi bi-star"></i>
+    Set default
+    </div>
+  </div>
+  <div class="col-sm-1">
+    <div class="btn background-red" style="border-radius: 1rem;">
+      <i class="bi bi-trash3 "></i>
+    </div>
+    
+  </div>
+  </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+          <div class="pb-4 ">
+    <div class="card border-brown py-3 px-3" style="border-radius: 10px;">
+      <div class="card-body">
+        <div class="row">
+          <div class="col-sm-5">
+            <div class="card-mastercard squircle d-flex flex-column justify-content-between">
+              <div class="d-flex justify-content-between">
+                <div class="squircle-card "></div>
+                <div class="text-white visa-font" ><strong>Mastercard</strong></div>
+              </div>
+              <div class="ml-25 mb-3">
+                <span class="card-bullet text-white">●●●● ●●●● ●●●● </span>
+                <span class="card-number text-white"><strong>6969</strong></span>
+              </div>
+              <div class="ml-25 justify-content-between d-flex mb-25 mr-2">
+                <div>
+                  <span style="opacity: 0.8; color: white; font-size: small;">Card Holder</span>
+                  <div class="text-white fs-6"><strong>Keqing</strong></div>
+                </div>
+                <div>
+                  <span style="opacity: 0.8; color: white; font-size: small;">Expires</span>
+                  <div class="text-white fs-6" style="opacity: 0.9;"><strong>12/31</strong></div>
+                </div>
+              </div>
+            </div>
+             
+          </div>
+          <div class="col-sm-7 d-flex flex-column justify-content-between">
+            <div>
+              <ul class="list-unstyled text-brown mb-4  " style="font-size: small;">
+                <li class="text-dark-brown mb-2  fs-6"> <strong>Mastercard •••• 6969</strong> 
+               
+                </li>
+                <li class="mb-2" style="font-size: 13px;">Expires on 12/31</li>
+                <li class="mb-2" style="font-size: 13px;">Keqing</li>
+                
+            </ul>
+            </div>
+               <div class="row ">
+    <div class="col">
+  <div class="btn w-100 rounded-pill border-brown background-light-brown"> 
+    <i class="bi bi-pencil-square "></i>
+    <span class="">edit</span>
+    </div>
+  </div>
+      <div class="col">
+  <div class="btn w-100 rounded-pill button-green font-green "> 
+    <i class="bi bi-star"></i>
+    Set default
+    </div>
+  </div>
+  <div class="col-sm-1">
+    <div class="btn background-red" style="border-radius: 1rem;">
+      <i class="bi bi-trash3 "></i>
+    </div>
+    
+  </div>
+  </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
     
 
 </main>
