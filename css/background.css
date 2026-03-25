@@ -21,10 +21,15 @@ background-color: #8C5A3C;
 }
 .border-brown{
     border-color: #E9DED2;
-    border-width: 1px;
+    border-width: 2px;
 }
 .background-light-brown{
     background-color: #FFF8F0;
+    color: #4B2E2B;
+}
+.background-light-brown:hover{
+    background-color: #8C5A3C;
+    color: #F9F5ED;
 }
 .background-little-bit-light-brown{
     background-color: #F9F5ED;
@@ -36,4 +41,14 @@ background-color: #8C5A3C;
 }
 .check-green{
     color: #7FB7BE;
+}
+
+.background-red{
+    border-color: red;
+    color: red;
+}
+
+.background-red:hover{
+    background-color: red;
+    color: whitesmoke;
 }
