@@ -4,6 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PetCare Booking System</title>
+    <link rel="prefetch" href="petcaredashboard.html" />
+    <link rel="prefetch" href="petshop.html" />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
     <link rel="stylesheet" href="css/booking.css" />
@@ -113,42 +115,95 @@
       <div class="modal-content">
         <button class="close-modal" onclick="closeModal()">&times;</button>
 
-        <div class="modal-step active" id="step1">
-          <h2 id="modalTitle">Grooming Booking</h2>
+        <div class="modal-step" id="step1">
+          <h2 class="modal-title">Grooming Booking</h2>
           <p class="step-indicator">Step 1 of 4</p>
-          <h3>Select Your Pet</h3>
-          <div class="pet-selection">
+          <h3 class="step-subtitle">Select Your Pet</h3>
+          <div class="selection-list">
             <div class="selection-card" onclick="selectOption(this)">
               <div class="card-content-wrapper">
                 <img src="image/dog.jpg" alt="Max" class="card-img-thumb" />
-                <div class="card-info"><strong>Max</strong><br /><small>Dog</small></div>
+                <div class="card-info">
+                  <strong>Max</strong>
+                  <small>Dog</small>
+                </div>
               </div>
             </div>
             <div class="selection-card" onclick="selectOption(this)">
               <div class="card-content-wrapper">
                 <img src="image/cat.jpg" alt="Luna" class="card-img-thumb" />
-                <div class="card-info"><strong>Luna</strong><br /><small>Cat</small></div>
+                <div class="card-info">
+                  <strong>Luna</strong>
+                  <small>Cat</small>
+                </div>
               </div>
             </div>
           </div>
-          <button class="btn-continue" onclick="nextStep(2)">Continue</button>
+          <div class="modal-footer">
+            <button class="btn-continue" onclick="nextStep(2)">Continue</button>
+          </div>
         </div>
 
-        <div class="modal-step" id="step2">
-          <h2>Grooming Booking</h2>
+        <div class="modal-step active" id="step2">
+          <h2 class="modal-title">Grooming Booking</h2>
           <p class="step-indicator">Step 2 of 4</p>
-          <h3>Choose Package</h3>
+          <h3 class="step-subtitle">Choose Package</h3>
           <div class="package-list">
             <div class="selection-card" onclick="selectOption(this)">
-              <div class="card-content-wrapper">
-                <div class="package-icon-circle grooming-bg"><i class="fas fa-soap"></i></div>
-                <div class="card-info"><strong>Basic</strong> - $40<br /><small>Bath & Dry, Brush, Nail Trim</small></div>
+              <div class="card-content-wrapper align-start">
+                <div class="package-icon-circle grooming-bg">
+                  <i class="fas fa-scissors"></i>
+                </div>
+                <div class="card-info">
+                  <span class="package-name">Basic</span>
+                  <span class="package-price">$40</span>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Bath & Dry</li>
+                    <li><i class="fas fa-check"></i> Brush & Comb</li>
+                    <li><i class="fas fa-check"></i> Nail Trim</li>
+                    <li><i class="fas fa-check"></i> Ear Cleaning</li>
+                  </ul>
+                </div>
               </div>
             </div>
+
             <div class="selection-card" onclick="selectOption(this)">
-              <div class="card-content-wrapper">
-                <div class="package-icon-circle standard-grad"><i class="fas fa-magic"></i></div>
-                <div class="card-info"><strong>Standard</strong> - $65 <span class="badge-pop">Popular</span><br /><small>Everything in Basic + Hair Cut</small></div>
+              <span class="badge-pop">Popular</span>
+              <div class="card-content-wrapper align-start">
+                <div class="package-icon-circle standard-grad" style="background: linear-gradient(135deg, #82b1b4 0%, #ba8558 100%); color: white">
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="card-info">
+                  <span class="package-name">Standard</span>
+                  <span class="package-price">$65</span>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Everything in Basic</li>
+                    <li><i class="fas fa-check"></i> Hair Cut & Styling</li>
+                    <li><i class="fas fa-check"></i> Teeth Brushing</li>
+                    <li><i class="fas fa-check"></i> Paw Pad Treatment</li>
+                    <li><i class="fas fa-check"></i> Cologne Spray</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+
+            <div class="selection-card" onclick="selectOption(this)">
+              <div class="card-content-wrapper align-start">
+                <div class="package-icon-circle premium-grad" style="background: #3e2f22; color: #ffd700">
+                  <i class="fas fa-crown"></i>
+                </div>
+                <div class="card-info">
+                  <span class="package-name">Premium</span>
+                  <span class="package-price">$120</span>
+                  <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Everything in Standard</li>
+                    <li><i class="fas fa-check"></i> Premium Shampoo & Conditioner</li>
+                    <li><i class="fas fa-check"></i> Luxury Spa Treatment</li>
+                    <li><i class="fas fa-check"></i> Professional Photo Session</li>
+                    <li><i class="fas fa-check"></i> Pet Hotel for 3 Days</li>
+                    <li><i class="fas fa-check"></i> Home Pickup & Delivery</li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -189,9 +244,9 @@
         </div>
 
         <div class="modal-step" id="step4">
-          <h2>Grooming Booking</h2>
+          <h2 class="modal-title">Grooming Booking</h2>
           <p class="step-indicator">Step 4 of 4</p>
-          <h3>Select Date & Time</h3>
+          <h3 class="step-subtitle">Select Date & Time</h3>
           <div class="input-group">
             <label><i class="far fa-calendar-alt"></i> Select Date</label>
             <input type="date" class="date-input" />
@@ -213,6 +268,6 @@
       </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="booking.js"></script>
   </body>
 </html>
