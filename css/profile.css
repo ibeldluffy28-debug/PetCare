@@ -163,17 +163,17 @@ body {
 .logo-area {
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 .logo-icon {
-  font-size: 18px;
+  font-size: 1.6rem;
   color: #c08552;
 }
 
 .logo-text {
-  font-weight: 600;
-  font-size: 18px;
+  font-size: 1.6rem;
+  font-weight: 700;
   color: #3e2f22;
 }
 
@@ -241,7 +241,7 @@ body {
 .notification-dot {
   width: 8px;
   height: 8px;
-  background: red;
+  background: #82b1b4;
   border-radius: 50%;
   position: absolute;
   top: 2px;
@@ -252,14 +252,23 @@ body {
 .profile-avatar {
   width: 32px;
   height: 32px;
-  background: #c08552;
+  background-image: linear-gradient(135deg, #82b1b4 0%, #ba8558 100%);
   color: white;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 12px;
-  font-weight: 500;
+  align-items: center;
+  font-size: 0.9rem;
+  font-weight: 700;
+  cursor: pointer;
+
+  box-shadow: 0 4px 10px rgba(62, 47, 34, 0.1);
+  transition: all 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
 }
 
 .pets-grid {
