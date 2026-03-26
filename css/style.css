@@ -6,7 +6,7 @@
 @import "add-pet.css";
 @import "payment.css";
 @import "sidebar.css";
-
+@import"favorites.css";
 body{
     font-size: 14px;
 }
