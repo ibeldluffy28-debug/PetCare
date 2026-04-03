@@ -377,3 +377,67 @@ body {
   font-size: 16px;
 }
 /* Akhir Footer */
+
+/* ================= NEWS HOME ================= */
+.news-home {
+  background: linear-gradient(135deg, #fff8f0 0%, #f6e9df 50%, #eaf4f5 100%);
+}
+
+.news-home .badge-feature {
+  background: #f3e5dc;
+  color: #a36b4f;
+}
+
+/* CARD */
+.news-card {
+  border: none;
+  border-radius: 18px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  background: #ffffffcc;
+  backdrop-filter: blur(10px);
+}
+
+/* HOVER EFFECT */
+.news-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+/* IMAGE */
+.news-card img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* TEXT */
+.news-card .card-title {
+  color: #4a3b36;
+  font-weight: 600;
+}
+
+.news-card .card-text {
+  color: #8c7b75;
+  font-size: 14px;
+}
+
+/* BADGE CUSTOM BIAR NYATU */
+.news-card .badge {
+  border-radius: 20px;
+  font-size: 12px;
+  padding: 5px 10px;
+  background-color: #7fb7be !important;
+  color: #fff;
+}
+
+/* BUTTON SEE ALL */
+.news-home .btn-primary {
+  background: #7fb7be;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+}
+
+.news-home .btn-primary:hover {
+  background: #6aa5ac;
+}
